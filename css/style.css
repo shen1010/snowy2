@@ -1,0 +1,260 @@
+body{
+  background:#84b6d7;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+  
+.word{
+  font-size:30px;
+  border-style:solid;
+  width:150px;
+  margin:20px;
+  padding-bottom:5px;
+  padding-top:5px;
+  padding-left:10px;
+  padding-right:10px;
+  text-align:center;
+  color:#eeeeee;
+  font-family: 'Indie Flower', cursive;
+  position:relative;
+  top:350px;
+  left:633px;
+}
+.snowy {
+  -webkit-animation: snowy 5s ease-in-out infinite 1s;
+          animation: snowy 5s ease-in-out infinite 1s;
+  background:#ffffff;
+  border-radius: 50%;
+  box-shadow:
+    #ffffff 90px -20px 0 -5px,
+    #ffffff 45px -30px,
+    #ffffff 50px 10px,
+    #ffffff 60px 15px 0 -10px,
+    #ffffff 100px 10px 0 -10px;
+  display:block;
+  height:75px;
+  width:75px;
+  margin-left:-60px;
+  position:absolute;
+  top:200px;
+  right:800px;
+}
+.snowy:after{
+  -webkit-animation: snowy_shadow 5s ease-in-out infinite 1s;
+          animation: snowy_shadow 5s ease-in-out infinite 1s;
+  background:#000000;
+  border-radius: 50%;
+  content:'';
+  height:15px;
+  width:130px;
+  opacity: 0.2;
+  position:absolute;
+  left:18px;
+  bottom:-60px;
+  -webkit-transform:scale(1);
+          transform:scale(1);
+}
+.snowy:before{
+  -webkit-animation:snowy_snow 2s infinite linear;
+          animation:snowy_snow 2s infinite linear;
+  content:'';
+  border-radius:50%;
+  display:block;
+  height:7px;
+  width:7px;
+  opacity:0.8;
+  -webkit-transform:scale(1.1);
+          transform:scale(1.1);
+}
+@-webkit-keyframes snowy{
+  50% {-webkit-transform: translatey(-40px);transform: translatey(-40px);}
+}
+@keyframes snowy{
+  50% {-webkit-transform: translatey(-40px);transform: translatey(-40px);}
+}
+@-webkit-keyframes snowy_shadow{
+  50%{-webkit-transform: translatey(40px) scale(.7);transform: translatey(40px) scale(.7);opacity:0.05;}
+}
+@keyframes snowy_shadow{
+  50%{-webkit-transform: translatey(40px) scale(.7);transform: translatey(40px) scale(.7);opacity:0.05;}
+}
+@-webkit-keyframes snowy_snow {
+  0% {
+    box-shadow:
+      rgba(238,238,238,0) 40px 40px,
+      rgba(238,238,238,0) 50px 50px,
+      #eeeeee 50px 75px,
+      #eeeeee 55px 50px,
+      #eeeeee 70px 100px,
+      #eeeeee 80px 95px,
+      #eeeeee 110px 45px,
+      #eeeeee 90px 35px;
+  }
+  25% {
+    box-shadow:
+      #eeeeee 30px 45px,
+      #eeeeee 40px 60px,
+      #eeeeee 50px 90px,
+      #eeeeee 55px 65px,
+      rgba(238,238,238,0) 70px 120px,
+      rgba(238,238,238,0) 80px 120px,
+      #eeeeee 110px 70px,
+      #eeeeee 90px 60px;
+  }
+  26% {
+    box-shadow:
+      #eeeeee 30px 45px,
+      #eeeeee 40px 60px,
+      #eeeeee 50px 90px,
+      #eeeeee 55px 65px,
+      rgba(238,238,238,0) 70px 40px,
+      rgba(238,238,238,0) 80px 20px,
+      #eeeeee 110px 70px,
+      #eeeeee 90px 60px;
+  }
+  50% {
+    box-shadow:
+      #eeeeee 30px 70px,
+      #eeeeee 40px 80px,
+      rgba(238,238,238,0) 50px 100px,
+      #eeeeee 55px 80px,
+      #eeeeee 70px 60px,
+      #eeeeee 80px 50px,
+      #eeeeee 110px 95px,
+      #eeeeee 90px 85px;
+  }
+  51% {
+    box-shadow:
+      #eeeeee 30px 70px,
+      #eeeeee 40px 80px,
+      rgba(238,238,238,0) 50px 45px,
+      #eeeeee 55px 80px,
+      #eeeeee 70px 60px,
+      #eeeeee 80px 50px,
+      #eeeeee 110px 95px,
+      #eeeeee 90px 85px;
+  }
+  75% {
+    box-shadow:
+      #eeeeee 30px 95px,
+      #eeeeee 40px 100px,
+      #eeeeee 50px 60px,
+      rgba(238,238,238,0) 55px 95px,
+      #eeeeee 70px 80px,
+      #eeeeee 80px 70px,
+      rgba(238,238,238,0) 110px 120px,
+      rgba(238,238,238,0) 90px 110px;
+  }
+  76% {
+    box-shadow:
+      #eeeeee 30px 95px,
+      #eeeeee 40px 100px,
+      #eeeeee 50px 60px,
+      rgba(238,238,238,0) 55px 35px,
+      #eeeeee 70px 80px,
+      #eeeeee 80px 70px,
+      rgba(238,238,238,0) 110px 25px,
+      rgba(238,238,238,0) 90px 15px;
+  }
+  100% {
+    box-shadow:
+      rgba(238,238,238,0) 30px 120px,
+      rgba(238,238,238,0) 40px 120px,
+      #eeeeee 50px 75px,
+      #eeeeee 55px 50px,
+      #eeeeee 70px 100px,
+      #eeeeee 80px 95px,
+      #eeeeee 110px 45px,
+      #eeeeee 90px 35px;
+  }
+}
+@keyframes snowy_snow {
+  0% {
+    box-shadow:
+      rgba(238,238,238,0) 40px 40px,
+      rgba(238,238,238,0) 50px 50px,
+      #eeeeee 50px 75px,
+      #eeeeee 55px 50px,
+      #eeeeee 70px 100px,
+      #eeeeee 80px 95px,
+      #eeeeee 110px 45px,
+      #eeeeee 90px 35px;
+  }
+  25% {
+    box-shadow:
+      #eeeeee 30px 45px,
+      #eeeeee 40px 60px,
+      #eeeeee 50px 90px,
+      #eeeeee 55px 65px,
+      rgba(238,238,238,0) 70px 120px,
+      rgba(238,238,238,0) 80px 120px,
+      #eeeeee 110px 70px,
+      #eeeeee 90px 60px;
+  }
+  26% {
+    box-shadow:
+      #eeeeee 30px 45px,
+      #eeeeee 40px 60px,
+      #eeeeee 50px 90px,
+      #eeeeee 55px 65px,
+      rgba(238,238,238,0) 70px 40px,
+      rgba(238,238,238,0) 80px 20px,
+      #eeeeee 110px 70px,
+      #eeeeee 90px 60px;
+  }
+  50% {
+    box-shadow:
+      #eeeeee 30px 70px,
+      #eeeeee 40px 80px,
+      rgba(238,238,238,0) 50px 100px,
+      #eeeeee 55px 80px,
+      #eeeeee 70px 60px,
+      #eeeeee 80px 50px,
+      #eeeeee 110px 95px,
+      #eeeeee 90px 85px;
+  }
+  51% {
+    box-shadow:
+      #eeeeee 30px 70px,
+      #eeeeee 40px 80px,
+      rgba(238,238,238,0) 50px 45px,
+      #eeeeee 55px 80px,
+      #eeeeee 70px 60px,
+      #eeeeee 80px 50px,
+      #eeeeee 110px 95px,
+      #eeeeee 90px 85px;
+  }
+  75% {
+    box-shadow:
+      #eeeeee 30px 95px,
+      #eeeeee 40px 100px,
+      #eeeeee 50px 60px,
+      rgba(238,238,238,0) 55px 95px,
+      #eeeeee 70px 80px,
+      #eeeeee 80px 70px,
+      rgba(238,238,238,0) 110px 120px,
+      rgba(238,238,238,0) 90px 110px;
+  }
+  76% {
+    box-shadow:
+      #eeeeee 30px 95px,
+      #eeeeee 40px 100px,
+      #eeeeee 50px 60px,
+      rgba(238,238,238,0) 55px 35px,
+      #eeeeee 70px 80px,
+      #eeeeee 80px 70px,
+      rgba(238,238,238,0) 110px 25px,
+      rgba(238,238,238,0) 90px 15px;
+  }
+  100% {
+    box-shadow:
+      rgba(238,238,238,0) 30px 120px,
+      rgba(238,238,238,0) 40px 120px,
+      #eeeeee 50px 75px,
+      #eeeeee 55px 50px,
+      #eeeeee 70px 100px,
+      #eeeeee 80px 95px,
+      #eeeeee 110px 45px,
+      #eeeeee 90px 35px;
+  }
+}
